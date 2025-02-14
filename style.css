@@ -1,0 +1,29 @@
+body {
+    color: white;
+    background-color: #364561;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.class1 {
+    background-color: #4e7e96;
+    padding: 10px;
+    
+}
+.class2 {
+    background-color: #416577;
+    padding: 10px;
+    
+}
+.linkbutton {
+    background-color: #ad6d37;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.linkbutton:hover {
+    background-color: #946135;
+
+}
