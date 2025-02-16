@@ -2,6 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+
     </head>
     <body>
         <h1>Hi, I'm Elliot!</h1>
@@ -14,6 +16,15 @@
                 <li>I code and build games when I procrastinate!</li>
             </ul>
         </p>
+        <div class = "classfunny">
+            <p>
+                If i'm in my normal time zone (UTC-5), it is currently <b id="time"></b> for me!!
+            </p>  
+            <p>
+               The weather in Ottawa is currently <b id="temp"></b>. 
+            </p>
+        </div>
+        <br>
         <div class="class1">
             <h3>Bad Flight Simulator</h3>
             <p>An old, not very polished 2D flight simulator I made when I still had free time.  It exists but I'm not actually sure you can play it. Sorry!!!</p>  
@@ -40,5 +51,64 @@
             <p>So basically I found a cool API that makes requests to Flightradar24 and I'm trying to see if I can make it into an app.</p>            
             <p></p>
         </div>
+
+
+        <script>
+            function updateTime() {
+              const options = {
+                timeZone: 'America/Toronto',
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: true // Use 12-hour format (set to false for 24-hour format)
+              };
+              const formatter = new Intl.DateTimeFormat('en-US', options);
+              const torontoTime = formatter.format(new Date());
+              document.getElementById('time').textContent = torontoTime;
+              console.log("time tick!")
+
+            }
+            async function updateWeather()
+            {
+                console.log("weather tick!")
+                const API_KEY = "ce24ef77d8b0a1347d916620ed71d916";
+                const CITY = "Ottawa";
+                const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric`;
+                try{
+                    const response = await fetch(API_URL)
+                    const data = await response.json()
+                    if (data.cod === 200) 
+                    {
+                        const weatherDescription = data.weather[0].description;
+                        const temperature = data.main.temp;
+                        document.getElementById('temp').textContent = `${weatherDescription} and ${temperature}°C`;
+                    } 
+                    else 
+                    {
+                        document.getElementById('temp').textContent = 'Failed to fetch weather data. cod: ' + data.cod;
+                    }
+                } 
+                catch(error) 
+                {
+                    document.getElementById('temp').textContent = 'Error fetching weather data.';
+                }
+            }
+
+            
+            //once a second, Initialize the time immediately
+
+            setInterval(updateTime, 1000);
+            updateTime(); // Initialize the time immediately
+
+    // Fetch weather data immediately and then every 10 minutes
+            updateWeather(); // Initialize the weather immediately
+            setInterval(updateWeather, 600000); // Schedule subsequent updates
+
+            //setInterval(updateTime, 1000);
+            //setInterval(updateWeather, 60000);
+            //updateTime();
+            //updateWeather();
+            
+
+          </script>
     </body>
 </html>

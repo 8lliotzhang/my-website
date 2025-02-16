@@ -17,6 +17,11 @@ body {
     padding: 10px;
     
 }
+.classfunny {
+    background-color: #212938;
+    padding: 10px;
+    font-family:monospace
+}
 .linkbutton {
     background-color: #ad6d37;
     color: white;
