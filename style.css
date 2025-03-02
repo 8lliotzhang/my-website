@@ -4,23 +4,28 @@ body {
     padding-left: 5%;
     padding-right: 5%;
 
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: monospace;
 }
-
+a{
+    color:#212938;
+}
 .class1 {
     background-color: #4e7e96;
     padding: 10px;
-    
+    margin:10px;
 }
 .class2 {
     background-color: #416577;
     padding: 10px;
-    
+    margin:10px;
+
 }
 .classfunny {
     background-color: #212938;
     padding: 10px;
-    font-family:monospace
+    font-family:monospace;
+    margin:10px;
+
 }
 .linkbutton {
     background-color: #ad6d37;
@@ -31,4 +36,10 @@ body {
 .linkbutton:hover {
     background-color: #946135;
 
+}
+.sidebox {
+    background-color: #4e7e96;
+    padding: 10px;
+    margin-left: 75%;
+    margin-top: 10px;
 }

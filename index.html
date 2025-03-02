@@ -6,16 +6,25 @@
 
     </head>
     <body>
-        <h1>Hey, I'm Elliot!</h1>
-        <p>Hello, world! I'm a Grade 11 IB student from Ottawa, Ontario. Sometimes I build stuff and put it here.</p>
-        
-        <p>(Fun?) Facts:
-            <ul>
-                <li>I play the piano and clarinet!</li>
-                <li>I started Hack Club at my school!</li>
-                <li>I code and build games when I procrastinate!</li>
-            </ul>
-        </p>
+        <div style="overflow: hidden; margin: 10px;">
+
+            <div style= "float: left; width: 60%;">
+                <h1>Hey, I'm Elliot!</h1>
+                <p>Hello, world! I'm a Grade 11 IB student from Ottawa, Ontario. Sometimes I build stuff and put it here.</p>
+                
+                <p>(Fun?) Facts:
+                    <ul>
+                        <li>I play the piano and clarinet!</li>
+                        <li>I started Hack Club at my school!</li>
+                        <li>I code and build games when I procrastinate!</li>
+                    </ul>
+                </p>
+            </div>
+            <div style="overflow: hidden"  class="sidebox">
+                :) <-- I look like this sometimes! <br> <br> (this is actually a self portrait)
+            </div>
+        </div>
+
         <div class = "classfunny">
             <p>
                 If I'm in my normal time zone (UTC-5), it is currently <b id="time"></b> for me!!
@@ -24,35 +33,30 @@
                The weather in Ottawa is currently <b id="temp"></b>. 
             </p>
         </div>
-        <br>
         <div class="class1">
             <h3>Bad Flight Simulator</h3>
             <p>An old, not very polished 2D flight simulator I made when I still had free time.  It exists but I'm not actually sure you can play it. Sorry!!!</p>  
             <a href = "https://relightstudio.itch.io/badflightsimulator" class="linkbutton">Check it out</a>
             <p></p>        
         </div>
-        <br>
         <div class="class1">
             <h3>Laser Lander</h3>
             <p>I made this with 2 friends at Counterspell Ottawa! The theme was "You are your own enemy". You control a lunar lander, but also must dodge the laser turret, which is controlled by your steering of the spaceship! Can you survive and land on the Moon?</p>  
             <a href = "https://kelliason.itch.io/laserlander" class="linkbutton">Play on itch.io (it's kinda loud)</a>
             <p></p>
         </div>
-        <br>
         <div class="class2">
             <h3>Coming Soon: Verifiery</h3>
             <p>A project with Charles Zhu! We're gonna use GPT output to detect AI-generated text and hopefully reduce false accusations of students!</p>  
             <a href = "https://github.com/8lliotzhang/verifiery" class="linkbutton">GitHub here</a>
             <p></p>
         </div>
-        <br>
         <div class="class2">
-            <h3>Coming Soon: Winglet</h3>
-            <p>So basically I found a cool API that makes requests to Flightradar24 and I'm trying to see if I can make it into an app.</p>            
+            <h3>Coming Soon: Flyaway</h3>
+            <p>I found this <a href="https://pyflightdata.readthedocs.io/en/latest/about.html">cool API</a> that gets data from Flightradar24, and I'm making it into a Python app. Flyaway is a small handy app to find the next flights leaving from an airport. Perfect for impulsive travelers.</p>            
             <p></p>
         </div>
-
-
+        
         <script>
             function updateTime() {
               const options = {
@@ -109,6 +113,6 @@
             //updateWeather();
             
 
-          </script>
+        </script>
     </body>
 </html>
