@@ -6,10 +6,26 @@
 
     </head>
     <body>
-        <div style="overflow: hidden; margin: 10px;">
-
-            <div style= "float: left; width: 60%;">
+        <!--headerrr -->
+        <div class="header" style="width:100%;">
+            <div style="width: 40%;">
                 <h1>Hey, I'm Elliot!</h1>
+            </div>
+            <div style=" float: right; flex: 1; height:max-content; text-align: center; vertical-align: middle;">
+              <br>
+                <p style="vertical-align: bottom; color: white;"> 
+                    <a class="a-spes" href=https://www.linkedin.com/in/elliot-zhang-402257289/>Linkedin</a> |
+                    <a class="a-spes" href=https://github.com/8lliotzhang/>Github</a> | 
+                    (future blog here) | 
+                    (something else here too)
+                </p>  
+            </div>
+
+        </div>
+        
+        <div style="overflow: hidden; margin: 10px;">
+            <!--bio -->
+            <div style= "float: left; width: 60%;">
                 <p>Hello, world! I'm a Grade 11 IB student from Ottawa, Ontario. Sometimes I build stuff and put it here.</p>
                 
                 <p>(Fun?) Facts:
@@ -17,14 +33,18 @@
                         <li>I play the piano and clarinet!</li>
                         <li>I started Hack Club at my school!</li>
                         <li>I code and build games when I procrastinate!</li>
+                        <li>Planes are cool. Maybe I'll work on/with them some day.</li>
+
                     </ul>
                 </p>
             </div>
+            <!--self-portrait q: -->
             <div style="overflow: hidden"  class="sidebox">
-                :) <-- I look like this sometimes! <br> <br> (this is actually a self portrait)
+                :) <-- I look like this! <br> <br> <br> <br> <br> <br> (self portrait)
             </div>
         </div>
 
+        <!--api stuff here -->
         <div class = "classfunny">
             <p>
                 If I'm in my normal time zone (UTC-5), it is currently <b id="time"></b> for me!!
@@ -39,6 +59,8 @@
             <a href = "https://relightstudio.itch.io/badflightsimulator" class="linkbutton">Check it out</a>
             <p></p>        
         </div>
+        <!--begin things worked on -->
+
         <div class="class1">
             <h3>Laser Lander</h3>
             <p>I made this with 2 friends at Counterspell Ottawa! The theme was "You are your own enemy". You control a lunar lander, but also must dodge the laser turret, which is controlled by your steering of the spaceship! Can you survive and land on the Moon?</p>  
@@ -47,7 +69,7 @@
         </div>
         <div class="class1">
             <h3>Ascify</h3>
-            <p>I went to Scrapyard Ottawa!!! That was fun. Optimized my sleep down to 30 mins (or less?). Anyways I made a lil python thing with Swadling. Is there probably a better way that does not involve thousands of files? Yes. But it's scrappy guys! so cmon.</p>  
+            <p>I went to Scrapyard Ottawa!!! That was fun. Optimized my sleep down to 30 mins (or less?). Anyways I made a lil python thing with Harry Chen (Swadling). Is there probably a better way that does not involve thousands of files? Yes. But it's scrappy guys! so cmon.</p>  
             <a href = "https://github.com/8lliotzhang/video-worsifier" class="linkbutton">GitHub link</a>
             <p></p>
         </div>
@@ -63,6 +85,8 @@
             <p></p>
         </div>
         
+        <!--api executer -->
+
         <script>
             function updateTime() {
               const options = {

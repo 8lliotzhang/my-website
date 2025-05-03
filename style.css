@@ -1,9 +1,6 @@
 body {
     color: white;
     background-color: #364561;
-    padding-left: 5%;
-    padding-right: 5%;
-
     font-family: monospace;
 }
 a{
@@ -12,12 +9,16 @@ a{
 .class1 {
     background-color: #4e7e96;
     padding: 10px;
-    margin:10px;
+    margin: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .class2 {
     background-color: #416577;
     padding: 10px;
     margin:10px;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 .classfunny {
@@ -25,6 +26,8 @@ a{
     padding: 10px;
     font-family:monospace;
     margin:10px;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 .linkbutton {
@@ -40,6 +43,19 @@ a{
 .sidebox {
     background-color: #4e7e96;
     padding: 10px;
-    margin-left: 75%;
+    margin-left: 85%;
     margin-top: 10px;
+}
+.header{
+    background-color: #212938;
+    position: sticky;
+    top: 0;
+    margin: 0%;
+    padding:10px;
+    width: max-content;
+    display: flex;
+
+}
+.a-spes{
+    color:white;
 }
