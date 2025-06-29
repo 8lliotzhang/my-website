@@ -2,6 +2,8 @@ body {
     color: white;
     background-color: #364561;
     font-family: monospace;
+    padding: 0px; 
+    margin: 0px;
 }
 a{
     color:#212938;
