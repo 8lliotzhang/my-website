@@ -1,1 +1,109 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif
+}
 
+.header{
+    background-image: linear-gradient(to bottom, #586786, #97b1ce);
+    /*MIDPOINT STANDARD BLUE IS #788CAA*/
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding:0;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+    .h-left{
+        width: 50%;
+        padding-left: 5%;
+    }
+    
+    .h-right{
+        width: 50%;
+        color: white;        
+    }
+
+    .h-a{
+        color: white;
+    }
+        .h-a:hover{
+            color: rgb(224, 224, 224);
+
+        }
+        .h-a:active{
+            color: rgb(194, 194, 194);
+
+        }
+        .h-a:visited{
+            color: rgb(37, 54, 65);
+    
+        }
+        
+.mainbox{
+    
+    background-color: white;
+    width: 66%;
+
+}
+    .subbox{
+        margin-top: 0;
+        margin-bottom: 10px;
+        background-color: rgb(224, 224, 224);
+    }
+
+    .subbox h2{
+        margin: 0;
+        font-size: medium;
+        background-color: #788CAA;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top:2px;
+        padding-bottom:2px;
+
+    }
+    .subbox p{
+           margin: 0;
+        padding: 10px;
+
+
+    }
+
+.sidebox{
+    background-color: rgb(224, 224, 224);
+    padding: 20px;
+    width: 22%;
+    float: right;
+    padding:0;
+
+}
+    .sidebox h2{
+        margin: 0;
+        font-size: medium;
+        background-color: #8b8b8b;
+        color: white;
+        padding-top:2px;
+        padding-bottom:2px;  
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sidebox p{
+        padding-left: 10px;        
+        padding-right: 10px;
+        padding-bottom: 10px;
+
+    }
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
